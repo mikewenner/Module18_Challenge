@@ -196,7 +196,7 @@ if st.button("Add Block"):
         #data=input_data,
         creator_id=42,
         prev_hash=prev_block_hash,
-        record=Record
+        record=Record(sender_data, receiver_data, amount_data)
     )
 
     pychain.add_block(new_block)
